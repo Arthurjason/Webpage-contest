@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+ <meta charset="utf-8"/>
+ <title>报名通道-网页制作大赛</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="./css/css.css">
+ <script type="text/javascript" src="./js/jquery.js"></script>
+</style>
+</head>
+<body class="bg">
+<div class="header">
+  <img src="./images/logo.png"/><span class="ldsn">鲁大学生网</span></div>
+	<div class="sign-box">
+
+	<div class="head">网页制作大赛报名表</div>
+
+		<form method="post" action="./web/getData.php" method="post" class="form-up">
+		<div class="form-item">
+		 <label>性质:</label>
+           <select name="type"  id = "select"  class="input"><span>*<span>
+              <option value='1'>个人设计赛</option>
+		      <option value='2'>个人开发赛</option> 
+			  <option value='3'>团队赛</option> 
+            </select>
+			<p class="explain">1、个人设计赛为设计网页;<br>2、个人开发赛为编码;<br>3、团队赛是设计开发为一体</p>
+		 </div>
+		
+		<div class="form-item">
+		 <label class="form-item-title" id="va">名称:</label>
+           <input type="text" name="user" id="user" class="input" placeholder="姓名" /><span>*<span>
+		 </div>
+		 
+		 <div class="form-item">
+		 <label>学院专业班级:</label>
+		   <input type="text" name="major" class="input" placeholder="学院专业班级"/><span>*<span>
+		  </div> 
+		  
+		  <div class="form-item">
+		  <label>Email地址:</label>
+		   <input type="text" name="email" class="input" placeholder="Email地址"/>
+		  </div>
+		  
+		  <div class="form-item">
+		  <label>手机号码:</label>
+		   <input type="text" name="phone" class="input" placeholder="手机号码"/><span>*<span>
+		  </div>
+	
+<!-- 		  <div class="form-item">
+		  <label>上传作品:</label>
+		  <input type="file" name="file" class="input" ><p class="tip">(只能上传rar或zip文件且小于100M)</p>
+		   </div> -->
+
+		   <div class="form-item">
+		   <label>作品名:</label>
+		   <input type="text" name="name" class="input" placeholder="作品名"/><span>*<span>
+		   </div>
+		   
+		   <div class="form-item">
+		   <label>作品描述:</label>
+		   <textarea name="description" class="textarea"> </textarea><span>*<span>
+		   </div>
+		    <input type="submit" class="button" value="提交"/>
+		</form>
+		
+	</div>
+	<div class="copyright">© 2015 LDSN.鲁大学生网,All rights reserved.鲁ICP备13008791号站长统计</div>
+</body>
+</html>
